@@ -20,14 +20,21 @@ npm i -g @nesjs/cli
 docker-compose up -d
 ```
 
-5. Refresh Bd ( GET )
+
+5. Clone file __.env.template__ and rename : __.env__
+
+6. Fill the enviroments vars with real data.
+
+7. Execute the app in dev.
+``` 
+nest start --watch
+
+``` 
+8. Refresh Bd ( GET )
 ```
  http://localhost:3000/api/v2/seed
  
 ``` 
-6. Clone file __.env.template__ and rename : __.env__
-
-
 
 # Stack
 * MongoBd
