@@ -83,8 +83,11 @@ export class PokemonService {
 const{deletedCount} = await this.pokemonModel.deleteOne({_id:id});
 if(deletedCount===0)
   throw new NotFoundException(`Pokemon with id ${id} not found`);
+
 return `Pokemon with id ${id} deleted successfully`;
-  }
+
+
+}
 
 
 private handleExceptions(error:any){
